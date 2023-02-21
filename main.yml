@@ -1,0 +1,12 @@
+- hosts: all
+  become: true 
+  tasks:
+    - import_tasks: "/tmp/sub_tasks/group_creation.yml"
+    - import_tasks: "/tmp/sub_tasks/file_updation.yml"
+    - import_tasks: "/tmp/sub_tasks/ipv6_disable.yml"
+    - import_tasks: "/tmp/sub_tasks/group_creation.yml"
+    - import_tasks: "/tmp/sub_tasks/user_creation.yml"
+    - import_tasks: "/tmp/sub_tasks/repo.yml"
+    - import_tasks: "/tmp/sub_tasks/package_install.yml"
+    - import_tasks: "/tmp/sub_tasks/grub_cmd.yml"
+    #- import_tasks: "/tmp/sub_tasks/file_system_creation.yml"
